@@ -35,3 +35,6 @@ myenv/ ----- (level1)                   # myenv (level1) is the home directory o
 
 RUN PROJECT
 # python manage.py runserver
+
+START APPLICATION
+# python manage.py startapp web
