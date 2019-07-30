@@ -1,0 +1,37 @@
+Django is powerful Python Web Framework.
+
+INSTALL HOMEBREW
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+INSTALL PYTHON3 
+# brew install python3
+
+INSTALL VIRTUAL ENVIRONMENT
+# sudo pip3 install virtualenv
+
+CREATE VIRTUALENVIRONMENT
+# mkdir project && cd project
+# virtualenv venv -p python3
+
+ACTIVATE VIRTUAL ENVIRONMENT   
+# source /bin/activate 
+# deactivate
+
+INSTALL DJANGO
+# pip install django==1.11.2
+
+CREATE PROJECT 
+# django-admin.py startproject myenv
+
+myenv/ ----- (level1)                   # myenv (level1) is the home directory of your project
+|-- myenv/ ---- (level2)                # myenv (level2) is the django project directory
+    |    |-- myenv/ ---- (level3)       # myenv (level3) is the root app of the project
+    |    |    |-- __init__.py  
+    |    |    |-- settings.py  
+    |    |    |-- urls.py  
+    |    |    |-- wsgi.py  
+    |    +-- manage.py  
++-- myenv/                              # venv is the virtual env containing our proejct1(level2)
+
+RUN PROJECT
+# python manage.py runserver
